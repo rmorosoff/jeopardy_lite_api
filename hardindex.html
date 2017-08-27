@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jeopardy Lite Exercise</title>
+  <link type="text/css" rel="stylesheet" href="assets/stylesheets/jeopardy.css" />
+</head>
+
+<body>
+  <div id="game">
+    <header id="masthead">
+      <h1>Jeopardy Lite Challenge</h1>
+      <h2>Using Newly Aquired API Skills</h2>
+    </header>
+    <div id="subheader">
+      <!-- Player score will be kept here -->
+      <h2>
+        Current Score: <span id="score">0</span>
+      </h2>
+      <h3 id="get-clue-text">
+        Hit the <strong>GET CLUE</strong> button to show the new question
+      </h3>
+      <h3 id="guess-button-text">
+        Enter your answer in the box and hit the <strong>GUESS</strong> button
+      </h3>
+    </div>
+    <div class="clear"></div>
+
+    <!-- background container for jeopardy cards -->
+    <div id="scoreboard">
+      <!-- container to hold question and answer items -->
+      <div class="card">
+        <div>
+          <button id="get-clue">Get Clue</button>
+        </div>
+        <div>
+          <h3>Category: <span id="category"></span></h3>
+        </div>
+        <div>
+          Point Value: <span id="value"></span>
+        </div>
+        <div>
+          Question: <span id="question"></span>
+        </div>
+        <div>
+          <div><textarea id="save-me" style="width:350px;height:40px;"></textarea></div>
+        </div>
+        <div>
+          <div><button id="guess-button">Guess</button></div>
+        </div>
+
+      </div>
+
+      <div class="clear"></div>
+    </div>
+
+    <!-- Link the jQuery library using the script tag -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/javascript/jeopardy.js"></script>
+</body>
+
+</html>
