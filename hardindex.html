@@ -18,7 +18,7 @@
         Current Score: <span id="score">0</span>
       </h2>
       <h3 id="get-clue-text">
-        Hit the <strong>GET CLUE</strong> button to show the new question
+        Hit the <strong>GET CLUE</strong> button for the category you wish to try
       </h3>
       <h3 id="guess-button-text">
         Enter your answer in the box and hit the <strong>GUESS</strong> button
@@ -28,27 +28,68 @@
 
     <!-- background container for jeopardy cards -->
     <div id="scoreboard">
-      <!-- container to hold question and answer items -->
-      <div class="card">
+      <!-- container to hold EASY question and answer items -->
+      <div class="card" id="card1">
         <div>
-          <button id="get-clue">Get Clue</button>
+          <button id="get-clue1">Get Clue</button>
         </div>
         <div>
-          <h3>Category: <span id="category"></span></h3>
+          <h3>Category: <span id="category1"></span></h3>
         </div>
         <div>
-          Point Value: <span id="value"></span>
+          Point Value: <span id="value1"></span>
         </div>
         <div>
-          Question: <span id="question"></span>
+          Question: <span id="question1"></span>
         </div>
         <div>
-          <div><textarea id="save-me" style="width:350px;height:40px;"></textarea></div>
+          <div><textarea id="save-me1" style="width:300px;height:40px;"></textarea></div>
         </div>
         <div>
-          <div><button id="guess-button">Guess</button></div>
+          <div><button id="guess-button1">Guess</button></div>
         </div>
+      </div>
 
+      <div class="card" id="card2">
+        <div>
+          <button id="get-clue2">Get Clue</button>
+        </div>
+        <div>
+          <h3>Category: <span id="category2"></span></h3>
+        </div>
+        <div>
+          Point Value: <span id="value2"></span>
+        </div>
+        <div>
+          Question: <span id="question2"></span>
+        </div>
+        <div>
+          <div><textarea id="save-me2" style="width:300px;height:40px;"></textarea></div>
+        </div>
+        <div>
+          <div><button id="guess-button2">Guess</button></div>
+        </div>
+      </div>
+
+      <div class="card" id="card3">
+        <div>
+          <button id="get-clue3">Get Clue</button>
+        </div>
+        <div>
+          <h3>Category: <span id="category3"></span></h3>
+        </div>
+        <div>
+          Point Value: <span id="value3"></span>
+        </div>
+        <div>
+          Question: <span id="question3"></span>
+        </div>
+        <div>
+          <div><textarea id="save-me3" style="width:300px;height:40px;"></textarea></div>
+        </div>
+        <div>
+          <div><button id="guess-button3">Guess</button></div>
+        </div>
       </div>
 
       <div class="clear"></div>
@@ -56,7 +97,7 @@
 
     <!-- Link the jQuery library using the script tag -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/javascript/jeopardy.js"></script>
+    <script src="assets/javascript/hardjeopardy.js"></script>
 </body>
 
 </html>
